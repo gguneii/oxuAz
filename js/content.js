@@ -17,18 +17,18 @@ function showCard(item) {
         content.innerHTML = `
            <div rel="noopener noreferrer"
                   aria-label="Te nulla oportere reprimique his dolorum">
-                  <img  src="${item.img}" class="object-cover w-full h-full alt="img">
+                  <img src="${item.img}" class="object-cover w-full h-full alt="img">
               </div>
               <div class="flex px-5 flex-col flex-1 py-6">
-                 <div class="flex justify-between">
+                 <div class="flex flex-wrap justify-between">
                     <div class="text-[#051d39] font-semibold">
-                    <a href="">Ana sehife /  </a>
+                    <a class="hidden md:block" href="">Ana sehife /  </a>
                     <a href="">Siyaset</a>
                     </div>
                      <div
                       class="item-meta h-[24px] text-[12px] lg:text-[16px]  tracking-[.96px] text-[#777777] mb-[20px] uppercase flex items-center">
                       <div class="item-left flex ">
-                          <span class="flex items-center mr-[14px]">
+                          <span class="flex items-center whitespace-nowrap mr-[14px]">
                               <i class="fa fa-calendar mr-[5px]" aria-hidden="true"></i>
                               07 OKT, 2024 / 00:00
                           </span>
