@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxu.az Xəbər saytı - Son xəbərlər</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="src/output.css" rel="stylesheet">
+    <style>
+        .icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            stroke-width: 0;
+            stroke: currentColor;
+            fill: currentColor;
+        }
+
+        .lists {
+            overflow-y: hidden;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+        }
+
+        .lists::-webkit-scrollbar {
+            display: none;
+        }
+
+        .logo {
+            --bs-gutter-x: 1.875rem;
+            --bs-gutter-y: 0;
+            width: 100%;
+            padding-right: calc(var(--bs-gutter-x)* .5);
+            padding-left: calc(var(--bs-gutter-x)* .5);
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header fixed top-0 left-0 w-full bg-white z-50 flex flex-col">
+        <!-- Navbar -->
+        <div class="navbar order-1 md:order-2 md:mt-[30px] ">
+            <div class="container">
+                <div class="all-header relative flex items-center py-[15px] md:py-[25px]">
+                    <div class="logo flex items-center lg:!mx-[60px]">
+                        <div class="navbar-left max-w-full mr-[30px]">
+                            <a class="flex items-center w-full" href="/">
+                                <img src="img/oxuaz_logo.svg" width="125" height="20" class="max-w-full" alt="">
+                                <img src="img/oxuaz_logo2.webp" class="mx-2" width="32" class="max-w-full" height="32"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="navbar-middle absolute  bg-white md:top-[2px] items-center md:w-[450px] md:mx-[190px] lg:mx-[270px] lg:w-[500px] xl:mx-[330px] xl:min-w-[660px] 2xl:min-w-[900px] max-w-[100vw] mx-auto bottom-[-54px] w-full md:bottom-0 z-[1] py-[10px] flex">
+                        <a href="/"
+                            class="live bg-red-500 inline-flex items-center justify-center w-[82px] px-[10px] uppercase whitespace-nowrap text-white rounded-[30px]"
+                            style="animation: pulse 2s infinite; transition: all .2s linear;">
+                            <svg class="icon icon-feed font-[400px] text-[20px]">
+                                <use xlink:href="#icon-feed">
+                                    <symbol id="icon-feed" viewBox="0 0 32 32">
+                                        <path
+                                            d="M12 16c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4zM20.761 7.204c3.12 1.692 5.239 4.997 5.239 8.796s-2.119 7.104-5.239 8.796c1.377-2.191 2.239-5.321 2.239-8.796s-0.862-6.605-2.239-8.796zM9 16c0 3.475 0.862 6.605 2.239 8.796-3.12-1.692-5.239-4.997-5.239-8.796s2.119-7.104 5.239-8.796c-1.377 2.191-2.239 5.321-2.239 8.796zM3 16c0 5.372 1.7 10.193 4.395 13.491-4.447-2.842-7.395-7.822-7.395-13.491s2.948-10.649 7.395-13.491c-2.695 3.298-4.395 8.119-4.395 13.491zM24.605 2.509c4.447 2.842 7.395 7.822 7.395 13.491s-2.948 10.649-7.395 13.491c2.695-3.298 4.395-8.119 4.395-13.491s-1.7-10.193-4.395-13.491z">
+                                        </path>
+                                    </symbol>
+                                </use>
+                            </svg>
+                            <span class="ml-[7px]">Live</span>
+                        </a>
+
+                        <div class="lists w-full">
+                            <ul class="flex">
+                                <li class="p-2 ml-3 whitespace-nowrap"><a
+                                        class="py-[6px] border rounded-[16px] font-medium  px-[12px] text-[14px]"
+                                        href="">İlham
+                                        Əliyevin Şərqi Zəngəzur səfəri</a></li>
+                                <li class="p-2 ml-3 whitespace-nowrap"><a
+                                        class="py-[6px] border rounded-[16px] font-medium  px-[12px] text-[14px]"
+                                        href="">İran-İsrail münasibətləri</a></li>
+                                <li class="p-2 ml-3 whitespace-nowrap"><a
+                                        class="py-[6px] border rounded-[16px] font-medium  px-[12px] text-[14px]"
+                                        href="">COP29</a></li>
+                                <li class="p-2 ml-3 whitespace-nowrap"><a
+                                        class="py-[6px] border rounded-[16px] font-medium  px-[12px] text-[14px]"
+                                        href="">Günün
+                                        əsas xəbərləri</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="navbar-right flex items-center lg:mr-[100px]">
+                        <i class="fa-solid fa-magnifying-glass text-[#464646] mr-[22px]  text-[22px]"></i>
+                        <a href=""
+                            class="text-[#464646] md:hidden py-[4px] px-[7px] border-[2px] border-[#464646] font-bold h-[24px] flex items-center justify-center rounded-[44px] mr-[22px] uppercase text-[12px]">Ru</a>
+                        <button onclick="sidebar()" class="w-[30px] h-[30px] text-[20px]"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="mobSidebar z-[10] py-10 px-5 min-w-[200px] md:hidden h-[100vh] bg-[#fafdfc] hidden">
+            <div class="navbar-left flex justify-between items-center mb-[40px]">
+                <a class="flex justify-between items-center" href="#">
+                    <img src="img/oxuaz_logo.svg" width="125" height="20" class="max-w-full" alt="">
+                    <img src="img/oxuaz_logo2.webp" width="32" class="max-w-full mx-2" height="32"
+                        alt="">
+                 </a>
+                 <button onclick="sidebar()" class=" text-[20px] font-bold cursor-pointer text-black">X</button>
+            </div>
+            <div class="social-icons mb-[40px] flex items-center justify-center">
+                <ul class="flex flex-nowrap overflow-auto items-center">
+                    <li class="text-[20px] mr-[24px] mb-[10px]"><a href="https://www.facebook.com/oxu.azz">
+                            <i class="fa-brands fa-facebook align-middle"></i>
+                        </a></li>
+
+                    <li class="text-[20px] mr-[24px] mb-[10px]"><a href="https://t.me/oxuaze">
+                            <i class="fa-brands fa-telegram align-middle"></i>
+                        </a></li>
+                    <li class="text-[20px] mr-[24px] mb-[10px]"><a
+                            href="https://www.whatsapp.com/channel/0029VaAakbx89ingOoeiTp40">
+                            <i class="fa-brands fa-whatsapp align-middle"></i>
+                        </a></li>
+                    <li class="text-[20px] mr-[24px] mb-[10px]"><a href="https://www.instagram.com/oxuaz/">
+                            <i class="fa-brands fa-instagram align-middle"></i>
+                        </a></li>
+                    <li class="text-[20px] mr-[24px] mb-[10px]"><a
+                            href="https://apps.apple.com/us/app/oxu-az-azerbaycan-xeberleri/id634362981">
+                            <i class="fa-brands fa-app-store align-middle"></i>
+                        </a></li>
+                    <li class="text-[20px] mr-[24px] mb-[10px]"><a
+                            href="https://play.google.com/store/apps/details?id=az.start.android.oxu">
+                            <i class="fa-brands fa-google-play align-middle"></i>
+                        </a></li>
+                </ul>
+            </div>
+            <ul class="flex flex-wrap justify-center">
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Ana səhifə</a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Siyasət </a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">İqtisadiyyat</a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Cəmiyyət</a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Ordu</a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Şou-biznes</a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Kriminal</a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">İdman</a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Mədəniyyət</a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Dunya</a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Müsahibə</a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Turizm</a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">İKT</a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Baku TV</a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">CineMastercard</a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Digər</a></li>
+                <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Maraqlı</a></li>
+            </ul>
+        </div>
+
+        <div class="relative">
+            <div class="marquee absolute z-[1] w-full md:top-0 top-[110px] p-2 flex justify-center items-center order-2 md:order-1 text-white bg-[#051d39]">
+                <marquee behavior="scroll" direction="left">
+                    salammm
+                    necesen
+                </marquee>
+            </div>
+        </div>
+    </header>
+    <div class="deskSidebar fixed top-[-100%] w-full h-[400px] text-black z-[20] bg-[#ebf6f6] ">
+       <div class="container max-w-[1000px] m-auto">
+        <ul class="flex flex-wrap items-center  mt-[170px] justify-center">
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Ana səhifə</a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Siyasət </a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">İqtisadiyyat</a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Cəmiyyət</a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Ordu</a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Şou-biznes</a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Kriminal</a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">İdman</a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Mədəniyyət</a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Dunya</a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Müsahibə</a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Turizm</a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">İKT</a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Baku TV</a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">CineMastercard</a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Digər</a></li>
+            <li class="mb-[25px] mr-[14px]"><a class="border py-[6px] px-[16px] rounded-xl w-[150px] text-[#051D39] font-semibold text-[14px]" href="">Maraqlı</a></li>
+        </ul>
+       </div>
+    </div>
+    <main class="main-area pt-[162px] md:pt-[120px]">
+        <div class="container-menu lg:px-[100px] ">
+            <div class="main-slider max-w-[1000px]">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide z-[-1]">
+                            <div class="slider-img md:relative md:z-[-1]">
+                                <a href="">
+                                    <img class="w-full h-[275px] md:h-[405px] align-bottom object-cover" width="640"
+                                        height="405" src="img/slider1.webp" alt="">
+                                </a>
+                            </div>
+                            <div
+                                class="slider-item-content min-h-[196px] flex-1 px-[20px] pt-[20px] pb-[66px] md:mt-[-81px] md:mx-[28px] md:mb-0 md:z-[10] ">
+                                <div
+                                    class="item-meta h-[24px] text-[11px] tracking-[.88px] text-[#777777] mb-[20px] uppercase flex items-center">
+                                    <div class="item-left flex font-bold ">
+                                        <a class="mr-[14px] text-[#1894a0]" href="/">Dunya</a>
+                                        <span class="flex items-center mr-[14px]">
+                                            <i class="fa fa-calendar mr-[5px]" aria-hidden="true"></i>
+                                            06 OKT, 2024 / 11:30
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>4398</span>
+                                        </span>
+                                    </div>
+                                    <div class="item-right"></div>
+                                </div>
+                                <div class="item-title">
+                                    <h2 class="text-[22px] font-semibold leading-8 tracking-[-.04em]">
+                                        <a href="">Israil ordusu yeni herbi emeliyyata basladi </a>
+                                    </h2>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="slider-img md:relative md:z-[-1]">
+                                <a href="">
+                                    <img class="w-full h-[275px] md:h-[405px] align-bottom object-cover" width="640"
+                                        height="405" src="img/slider1.webp" alt="">
+                                </a>
+                            </div>
+                            <div
+                                class="slider-item-content min-h-[196px] flex-1 px-[20px] pt-[20px] pb-[66px] md:mt-[-81px] md:mx-[28px] md:mb-0 md:z-[10] ">
+                                <div
+                                    class="item-meta h-[24px] text-[11px] tracking-[.88px] text-[#777777] mb-[20px] uppercase flex items-center">
+                                    <div class="item-left flex font-bold ">
+                                        <a class="mr-[14px] text-[#1894a0]" href="/">Dunya</a>
+                                        <span class="flex items-center mr-[14px]">
+                                            <i class="fa fa-calendar mr-[5px]" aria-hidden="true"></i>
+                                            06 OKT, 2024 / 11:30
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>4398</span>
+                                        </span>
+                                    </div>
+                                    <div class="item-right"></div>
+                                </div>
+                                <div class="item-title">
+                                    <h2 class="text-[22px] font-semibold leading-8 tracking-[-.04em]">
+                                        <a href="">Israil ordusu yeni herbi emeliyyata basladi </a>
+                                    </h2>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="slider-img md:relative md:z-[-1]">
+                                <a href="">
+                                    <img class="w-full h-[275px] md:h-[405px] align-bottom object-cover" width="640"
+                                        height="405" src="img/slider1.webp" alt="">
+                                </a>
+                            </div>
+                            <div
+                                class="slider-item-content min-h-[196px] flex-1 px-[20px] pt-[20px] pb-[66px] md:mt-[-81px] md:mx-[28px] md:mb-0 md:z-[10] ">
+                                <div
+                                    class="item-meta h-[24px] text-[11px] tracking-[.88px] text-[#777777] mb-[20px] uppercase flex items-center">
+                                    <div class="item-left flex font-bold ">
+                                        <a class="mr-[14px] text-[#1894a0]" href="/">Dunya</a>
+                                        <span class="flex items-center mr-[14px]">
+                                            <i class="fa fa-calendar mr-[5px]" aria-hidden="true"></i>
+                                            06 OKT, 2024 / 11:30
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>4398</span>
+                                        </span>
+                                    </div>
+                                    <div class="item-right"></div>
+                                </div>
+                                <div class="item-title">
+                                    <h2 class="text-[22px] font-semibold leading-8 tracking-[-.04em]">
+                                        <a href="">Israil ordusu yeni herbi emeliyyata basladi </a>
+                                    </h2>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="slider-img md:relative md:z-[-1]">
+                                <a href="">
+                                    <img class="w-full h-[275px] md:h-[405px] align-bottom object-cover" width="640"
+                                        height="405" src="img/slider1.webp" alt="">
+                                </a>
+                            </div>
+                            <div
+                                class="slider-item-content min-h-[196px] flex-1 px-[20px] pt-[20px] pb-[66px] md:mt-[-81px] md:mx-[28px] md:mb-0 md:z-[10] ">
+                                <div
+                                    class="item-meta h-[24px] text-[11px] tracking-[.88px] text-[#777777] mb-[20px] uppercase flex items-center">
+                                    <div class="item-left flex font-bold ">
+                                        <a class="mr-[14px] text-[#1894a0]" href="/">Dunya</a>
+                                        <span class="flex items-center mr-[14px]">
+                                            <i class="fa fa-calendar mr-[5px]" aria-hidden="true"></i>
+                                            06 OKT, 2024 / 11:30
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                            <span>4398</span>
+                                        </span>
+                                    </div>
+                                    <div class="item-right"></div>
+                                </div>
+                                <div class="item-title">
+                                    <h2 class="text-[22px] font-semibold leading-8 tracking-[-.04em]">
+                                        <a href="">Israil ordusu yeni herbi emeliyyata basladi </a>
+                                    </h2>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-button-next cursor-pointer absolute top-auto bottom-3 right-10"></div>
+                    <div class="swiper-button-prev cursor-pointer absolute top-auto bottom-3 left-10"></div>
+                    <div
+                        class="swiper-pagination swiper-pagination-bullets bottom-[24px] z-[1] w-full text-center duration-300">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cardss">
+                <section class="py-6 sm:py-12">
+                    <div class="container p-6 mx-auto space-y-8">
+                        <div id="cards" class="grid sm:grid-cols-2 space-x-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+    </main>
+    <footer class="bg-[#EFF1F0]">
+        <div class="container-footer mx-[20px] lg:mx-[100px]">
+            <div class="row grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="grid col-span-1 w-full">
+                    <div class="footer-logo pt-[50px] mb-[40px]">
+                        <a href="">
+                            <img src="img/oxuaz_logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="copyright mt-[20px] text-[15px]">
+                        <p class="mb-[1rem]">Bütün hüquqlar qorunur © 2013-2024</p>
+                        <p class="mb-[1rem]">Oxu.Az 24 saat ərzində, Azərbaycan və rus dillərində, ölkədə və dünyada
+                            baş verən ən aktual və maraqlı hadisələr barədə operativ xəbərlər, oxucuları və cəmiyyəti
+                            maraqlandıran suallara cavablar, analitik məqalələr, foto və videohesabatlar hazırlayır.</p>
+                        <ul class="flex flex-wrap items-center">
+                            <li class="text-[32px] mr-[24px] mb-[10px]"><a href="https://www.facebook.com/oxu.azz">
+                                    <i class="fa-brands fa-facebook align-middle"></i>
+                                </a></li>
+
+                            <li class="text-[32px] mr-[24px] mb-[10px]"><a href="https://t.me/oxuaze">
+                                    <i class="fa-brands fa-telegram align-middle"></i>
+                                </a></li>
+                            <li class="text-[32px] mr-[24px] mb-[10px]"><a
+                                    href="https://www.whatsapp.com/channel/0029VaAakbx89ingOoeiTp40">
+                                    <i class="fa-brands fa-whatsapp align-middle"></i>
+                                </a></li>
+                            <li class="text-[32px] mr-[24px] mb-[10px]"><a href="https://www.instagram.com/oxuaz/">
+                                    <i class="fa-brands fa-instagram align-middle"></i>
+                                </a></li>
+                            <li class="text-[32px] mr-[24px] mb-[10px]"><a
+                                    href="https://apps.apple.com/us/app/oxu-az-azerbaycan-xeberleri/id634362981">
+                                    <i class="fa-brands fa-app-store align-middle"></i>
+                                </a></li>
+                            <li class="text-[32px] mr-[24px] mb-[10px]"><a
+                                    href="https://play.google.com/store/apps/details?id=az.start.android.oxu">
+                                    <i class="fa-brands fa-google-play align-middle"></i>
+                                </a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="text-[16px] col-span-1 lg:mx-[50px] lg:pt-[50px] ">
+                    <div class="footer-block mb-[32px]">
+                        <div class="footer-contact">
+                            <span>Karyera</span>
+                        </div>
+                        <span><a href="">cv@oxu.az</a></span>
+                    </div>
+                    <div class="footer-block mb-[32px]">
+                        <div class="footer-contact ">
+                            <span>Umumi sorgular ucun</span>
+                        </div>
+                        <ul>
+                            <li><a href="">editor@oxu.az</a></li>
+                            <li><a href="">055 224 76 86</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="text-[16px] col-span-1 lg:pt-[50px]">
+                    <div class="footer-block">
+                        <ul>
+                            <li><a href="">Saytda reklem</a></li>
+                            <li><a href="">Bizimle elage</a></li>
+                            <li><a href="">Mexfilik siyaseti</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 2000,
+            },
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
