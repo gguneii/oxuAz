@@ -157,7 +157,6 @@ function handleCard() {
 const form = document.getElementById("form")
 
 function editNews(id) {
-
   const {
     title: ad,
     img,
